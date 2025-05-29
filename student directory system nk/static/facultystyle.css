@@ -1,0 +1,50 @@
+body{
+    background:linear-gradient(90deg,rgb(146, 248, 240),rgb(4, 209, 236));
+}
+nav {
+            background-color: #333;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+           
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+             font-size: large;
+            font-family:  'Times New Roman';
+        }
+
+   
+
+        header {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+        .logo{
+            background-color: rgb(0, 110, 255);
+            display: flex;
+            justify-content: center;
+            color: #f4f4f4;
+        }
+        h1{
+            font: bold ;
+
+        }
+        .footer{
+            background-color: white;
+            text-align: center;
+
+        }
