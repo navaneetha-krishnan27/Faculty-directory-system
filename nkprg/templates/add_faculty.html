@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin page</title>
+     <link rel="stylesheet" href="/static/facultystyle.css">
+</head>
+<body>
+    <header> 
+        
+            <div class="logo">
+        
+            <img src="/image/logo2.png" height="60" width="60"><br> <p><strong>ALAGAPPA UNIVERSITY
+State University <br>| A++ by NAAC (CGPA : 3.59) Dual Mode in the 4th Cycle | Category - I University by UGC <br>
+Karaikudi - 630 003, Tamil Nadu, India</strong></p><br>
+<img src="/image/founder_logo.png" height="60" width="60">
+                       
+</div>
+        <h1>ALAGAPPA FACULTY DIRECTORY SYSTEM</h1>
+            <div>
+            <nav>
+                <ul>
+                    <li><a href="/templates/faculty_home.html">home</a></li>
+                    <li><a href="/templates/faculty_list.html">faculty</a></li>
+                    <li><a href="/templates/add_faculty.html">admin page</a></li>
+                    <li><a href="#">about us</a></li>
+                </ul>
+            </nav>
+            </div>
+        </header>
+        <center>
+        <div class="addfaculty">
+         <form method="post" enctype="multipart/form-data">
+        <h1>Add Faculty Member</h1>
+        <input type="text" name="name" placeholder="Name" required><br>
+        <input type="text" name="title" placeholder="Title"><br>
+        <input type="text" name="department" placeholder="Department"><br>
+        <input type="email" name="email" placeholder="Email"><br>
+        <input type="text" name="phone" placeholder="Phone"><br>
+        <textarea name="bio" placeholder="Bio"></textarea><br>
+        <input type="file" name="photo" accept="image/*" required><br>
+        <input type="submit" value="Add Faculty">
+    </form>
+</div>
+    </center>
+    <div class="video-background">
+    <video autoplay loop muted playsinline>
+      <source src="/video/tronlegacy.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+ 
+
+</body>
+</html>
