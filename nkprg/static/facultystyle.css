@@ -258,3 +258,66 @@ footer a:hover {
   min-height: 100%;
   object-fit: cover;
 }
+.about{
+        p{
+        padding: 40px;
+        max-width: 900px;
+        margin: 30px auto;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        font-size: 16px;
+        line-height: 1.8;
+        color: #333;
+        text-align: justify;
+    }
+}
+.profile{
+   body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 40px;
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        img {
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 10px auto;
+            padding: 12px;
+            background-color: #ffffff;
+            border-left: 5px solid #007acc;
+            border-radius: 6px;
+            max-width: 600px;
+            text-align: left;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: #27ae60;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #219150;
+        }
+    }

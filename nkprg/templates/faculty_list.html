@@ -24,23 +24,23 @@ Karaikudi - 630 003, Tamil Nadu, India</strong></p><br>
                     <li><a href="/templates/faculty_home.html">home</a></li>
                     <li><a href="/templates/faculty_list.html">faculty</a></li>
                     <li><a href="/templates/add_faculty.html">admin page</a></li>
-                    <li><a href="#">about us</a></li>
+                    <li><a href="/templates/faculty_about.html">about us</a></li>
                 </ul>
             </nav>
             </div>
         </header>
     <div class="directory">
-  <h1>Faculty Directory</h1>
-  <ul>
-    {% for f in faculty %}
-      <li><a href="/faculty/{{ f[0] }}">
-        <img src="/static/photos/{{ f[4] }}" alt="Photo" width="50"> {{ f[1] }} - {{ f[2] }} ({{ f[3] }})
-      </a></li>
-    {% endfor %}
-  </ul>
-  <a href="/templates/add_faculty.html">Add Faculty</a>
-  </div>
-
-    
+  <h1>Faculty Members</h1>
+    <ul>
+        {% for member in faculty %}
+        <li>
+            <a href="/faculty/{{ member[0] }}">{{ member[1] }}</a> - {{ member[2] }} ({{ member[3] }})
+            <br>
+            <img src="{{ url_for('static', filename='photos/' ~ member[4]) }}" width="100">
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="/add">Add Faculty</a>
+    </div>
 </body>
 </html>
