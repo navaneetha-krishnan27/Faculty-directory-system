@@ -30,17 +30,23 @@ Karaikudi - 630 003, Tamil Nadu, India</strong></p><br>
             </div>
         </header>
     <div class="directory">
-  <h1>Faculty Members</h1>
+     <h1>Faculty Members</h1>
     <ul>
         {% for member in faculty %}
         <li>
-            <a href="/faculty/{{ member[0] }}">{{ member[1] }}</a> - {{ member[2] }} ({{ member[3] }})
+            <a href="/faculty/ {{member[0] }}">{{ member[1] }}</a> - {{ member[2] }} ({{ member[3] }})
             <br>
             <img src="{{ url_for('static', filename='photos/' ~ member[4]) }}" width="100">
         </li>
         {% endfor %}
     </ul>
-    <a href="/add">Add Faculty</a>
+    <a href="/templates/add_faculty.html">Add Faculty</a>
     </div>
+     <footer>
+            <div class="footer"> 
+                <a href="https://www.alagappauniversity.ac.in/homepage">CLICK HERE<br>FOR INFORMATION VISIT OUR OFFICIAL WEBSITE</a>  
+                <center><br>© 2025 Alagappa University, Karaikudi, Tamilnadu</center>
+            </div>
+        </footer>
 </body>
 </html>
