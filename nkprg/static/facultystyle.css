@@ -367,3 +367,32 @@ ul li::before {
 .profile a:hover {
     background-color: #002244;
 }
+.search-container{
+    .search-container {
+      text-align: center;
+    }
+
+    .search-box {
+      width: 300px;
+      padding: 10px;
+      font-size: 16px;
+      border: 2px solid #ccc;
+      border-radius: 25px;
+      outline: none;
+    }
+
+    .search-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-left: 10px;
+      border: none;
+      background-color: #4CAF50;
+      color: white;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+
+    .search-button:hover {
+      background-color: #45a049;
+    }
+}
